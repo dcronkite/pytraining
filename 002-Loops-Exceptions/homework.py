@@ -14,6 +14,10 @@ with open(filepath) as fh:
 
 3. To modify the program, count the number of times the word appears in the file
 
+
+4. (Extra credit) Use any method to find the 5 most frequent words in a file.
+(If you need one, use included `dickens.txt`.)
+
 See HINTS at bottom of file for help.
 """
 
@@ -33,10 +37,6 @@ if __name__ == '__main__':
         print('USAGE: python homework.py filepath word_to_find')
     else:
         search(sys.argv[1], sys.argv[2])
-
-
-
-
 
 
 """
