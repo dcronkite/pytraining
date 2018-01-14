@@ -1,20 +1,29 @@
 """
-Assignment: Build a command line program to recursively search a directory.
+Assignment
+===============
+* Write a program which repeatedly reads numbers until the user enters "done".
+* Once "done" is entered, print out the total, count, and average of the numbers.
+* If the user enters anything other than a number, detect their mistake using
+try and except and print an error message and skip to the next number.
 
-1. Recursively read files in all directories
-2. If filename/directory contains word, print it out
-3. Provide summary of all files/dirs found with complete path and a score (how many words does it have present)
-4. In directories:  <-- this seems lame
-	1. count the number of different types of extensions
-5. For multiple words, show the directories/files associated with each
-
-
-### Extra Credit:
-* Modify this to look in file contents as well
-* To open a file:
-
-```python
-with open(filepath) as fh:
-    fh.read()
-```
+Enter a number: 4
+Enter a number: 5
+Enter a number: bad data
+Invalid input
+Enter a number: 7
+Enter a number: done
+16 3 5.33333333333
 """
+
+numbers = []
+data = input('Enter a number: ')
+
+print('Total =', total)
+print('Count =', count)
+print('Average =', average)
+
+"""
+For extra credit, add the min and max
+"""
+# print('Min =', minimum)
+# print('Max =', maximum)
