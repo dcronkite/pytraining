@@ -42,20 +42,36 @@ Functions allow code re-use, as well as some other Python *magic* like iterators
 * Iterators
     * yield statement
 
-## 004- Classes/Standard Library
+## 004- Functions and Classes
+
+### Functions
+Revisit functions
+Recursion
 
 ### Classes
 Introduction to Python objects and object-oriented programming.
+
+### Extra
+Recursively iterate through directories
+
+
+## 005- Classes and the Standard Library
+
+### Quickly Revisit Classes
 
 ### Standard Library
 
 * Reading documentation
 * Using the libraries
 
+### Regular Expressions
+
+* Using regular expressions
+
 ### Logging
 An example will be provided using the `logging` module.
 
-## 005- Connecting to Data: SQL
+## 006- Connecting to Data: SQL
 
 ### Beyond the Standard Library
 An introduction to packages outside the standard library.
@@ -78,7 +94,7 @@ Advanced connections, and using an ORM.
 ### Writing Code to Ease Use
 Setting up SQL Alchemy can unnecessarily complicate basic code, so it can be helpful to write your own 'wrappers' around the code to ease use. Share my own library. Introduce git.
 
-## 006- Building a GUI
+## 007- Building a GUI
 
 ### Motivate GUI
 Similar to setting up a chart abstraction tool, etc. This can provide a helpful interface from which to access code already written. Motivation: GUI for searching directory structure
@@ -86,10 +102,11 @@ Similar to setting up a chart abstraction tool, etc. This can provide a helpful 
 ### tkinter
 Introduce a GUI library.
 
-### GUI for Searching Directory Structure
-Or other applicable example?
+### Build a GUI
+A GUI for searching directory structure
 
-## 007- Building a Website
+
+## 008- Building a Website
 
 ### Motivating Web Server
 Another type of GUI, but with different advantages/disadvantages.
@@ -100,7 +117,7 @@ Flask framework.
 ### Building a Chart Abstraction Interface
 Example to show how to build out a website.
 
-## 008- Data Science with Python: Pandas
+## 009- Data Science with Python: Pandas
 
 ### Introduction to Pandas Data Structure
 
@@ -110,26 +127,28 @@ Example to show how to build out a website.
 ### Example Dataset
 Work with and evaluate a sample dataset.
 
-## 009- Advanced Pandas: Data Cleaning
+## 010- Advanced Pandas: Data Cleaning
 Use a 'dirty' dataset, and show steps to clean and analyze the data. This will provide a detailed look at how to use pandas to pick apart a dataset.
 
 
-## 010- Data Visualization: Concepts and Pandas
+## 011- Data Visualization: Concepts and Pandas
 
 ### Principles of Visualization
 
 ### Visualization in Pandas
 
 
-## 011- Advanced Plotting
+## 012- Plotting
 Introduce some visualization libraries.
 
 * matplotlib
 * seaborn
-* ggplot
+* plot.ly
 
 
-## 012- Advanced Topics
+## 013- Advanced Plotting
+
+## 014- Advanced Topics
 This is more of a placeholder for certain advanced topics, depending on interest. Including:
 
 * Typing
@@ -139,9 +158,9 @@ This is more of a placeholder for certain advanced topics, depending on interest
 * Packaging
 
 
-## 013- Machine Learning Intro
+## 015- Machine Learning Intro
 An introduction to machine learning using the scikit-learn library.
 
 
-## 014- Advanced Data Analytics
+## 016- Advanced Data Analytics
 Using Python to download and clean a dataset, explore the variables, and then create a model to predict outcomes using the variables. This will use pandas, a plotting library, and scikit-learn.
