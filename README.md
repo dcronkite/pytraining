@@ -45,14 +45,22 @@ Functions allow code re-use, as well as some other Python *magic* like iterators
 ## 004- Functions and Classes
 
 ### Functions
-Revisit functions
-Recursion
+
+* Revisit functions with a focus on recursion
+* Recursion will help to cement previous learning
 
 ### Classes
 Introduction to Python objects and object-oriented programming.
 
+* Create a Point class (as on an x-y axis)
+* Homework has Card class (deck of cards)
+    * Simulate a poker game
+
 ### Extra
-Datetime
+Datetime - learn how to use the datetime class to create dates/datetimes, as well as to calculate their differences
+
+* Learn how to explore and use the documentation
+* Practice using classes
 
 
 ## 005- Classes and the Standard Library
