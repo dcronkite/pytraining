@@ -1,8 +1,6 @@
 """
 find_in_directory.py
-
 Recursively iterate through files/directories for specified parameters.
-
 # Steps (for homeworks)
 ## HW005:
 1. Run the file. Go to the containing directory and run:
@@ -21,17 +19,14 @@ Recursively iterate through files/directories for specified parameters.
         for path, note in found_items:
             with open('out.log', 'w') as out:
                 out.write(f'{note} in file {path}'.
-
 ## HW006:
 1. What additional filetypes can you search for? (csv? sas? html?)
 2. You can keep the path updated correctly with `os.path.join(root, file)`
     * try printing this out
-
 ## HW007:
 1. You have learned how to read in some Office doc types. Try adding them to this file
 2. Read SAS7BDAT files too with this library: https://pypi.python.org/pypi/sas7bdat
     * Reach out if you have trouble with the documentation
-
 ## HW008:
 1. Design (on paper) a GUI with the functionality you want to add
     * You will need a space to specify a directory
@@ -46,13 +41,15 @@ Recursively iterate through files/directories for specified parameters.
 """
 import os  # operating system (e.g., file) stuff
 import sys  # system-specific parameters
+import logging  # logging.basicConfig
 
 
-def main(search_path):
+def main(search_path, file_extension=None):
     """ <-- this is the documentation for your function
     Search through all directories/files under search_path
         and print results related to a particular search.
     :param search_path: path to search for files
+    :param file_extension: file_extension to search for (not yet implemented)
     :return:
     """
     for root, files, dirs in os.walk(search_path):
@@ -62,7 +59,7 @@ def main(search_path):
         for file in files:
             os.path.join(root, file)  # this function might be useful--what does it do?
             pass  # explore what happens here
-        for dir in dirs:
+        for d in dirs:
             # does the `os.path.join` function work here too?
             pass  # explore what happens here
     # nothing to return-- make sure you print out your results
@@ -71,7 +68,12 @@ def main(search_path):
 if __name__ == '__main__':
     args = sys.argv  # command line arguments
     if len(args) > 1:  # args[0] == name of program; args[1:] specified by user
-        main(args[1])  # this should be the directory into function `main`
+        # args[1]  # first argument supplied -> this should be the path
+        # args[2]  # this would be a second argument
+        if len(args) > 2:
+            main(args[1], args[2])  # this should be the directory into function `main`
+        else:
+            main(args[1])
     else:
-        print('Usage: python find_in_directory.py <path>')
+        print('Usage: python find_in_directory.py <path> <file-extension>')
         raise ValueError('ArgumentError: Missing parameter.')
