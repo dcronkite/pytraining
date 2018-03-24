@@ -52,7 +52,7 @@ def main(search_path, file_extension=None):
     :param file_extension: file_extension to search for (not yet implemented)
     :return:
     """
-    for root, files, dirs in os.walk(search_path):
+    for root, dirs, files in os.walk(search_path):
         # root contains the current directory
         # files- list of all files in current directory
         # dirs- list of all dirs in current directory
