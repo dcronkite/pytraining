@@ -3,6 +3,8 @@ from reviewer import app, db
 
 app.config['SQLALCHEMY_DATABASE_URI'] = r'sqlite:///test.db'
 app.config['DEBUG'] = True
+app.config['SECRET_KEY'] = b'\r\x82\xa4>\x05\xf6pl_\x7f'  # os.urandom(12)
+
 
 import reviewer.views
 from reviewer import models
