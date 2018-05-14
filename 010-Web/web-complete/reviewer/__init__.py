@@ -1,3 +1,6 @@
+"""
+This file contains the initialization elements
+"""
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 

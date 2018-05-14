@@ -1,3 +1,6 @@
+"""
+Forms simplify the data collection process and do automatic form-validation
+"""
 from flask_wtf import FlaskForm
 from wtforms import TextAreaField, SubmitField, RadioField, StringField, SelectField
 from wtforms.validators import DataRequired
