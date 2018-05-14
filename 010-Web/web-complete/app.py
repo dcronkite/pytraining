@@ -1,6 +1,10 @@
 """
 Main file. Run this with `python app.py`
 """
+import sys  # system
+import os  # operating system
+# get current path to add the package to system path
+sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'reviewer'))
 from reviewer import app, db
 
 
