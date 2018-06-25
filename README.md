@@ -181,40 +181,73 @@ Example to show how to build out a website.
 ### Example Dataset
 Work with and evaluate a sample dataset.
 
-## 012- Advanced Pandas: Data Cleaning
+## 012- Advanced Pandas: Data Cleaning and Visualization
 Use a 'dirty' dataset, and show steps to clean and analyze the data. This will provide a detailed look at how to use pandas to pick apart a dataset.
 
+### SQL Equivalents in Pandas
 
-## 013- Data Visualization: Concepts and Pandas
+* Grouping
+* Aggregation
+* Ordering
+* Filtering out nulls (`isnull`, `notnull`)
+
+### Data Cleaning
+
+* Using `dropna` and `fillna` to clean nulls
+
+### Basic Plotting
+
+* Plotting with `pandas.DataFrame.plot`
+
+## 013- Data Visualization and Testing
+
+* Getting started in the Python visualization ecosystem
+* How to test your Python projects to make sure they're working correctly
 
 ### Principles of Visualization
 
-### Visualization in Pandas
+* What makes a good visualization?
 
+### Visualization
 
-## 014- Plotting
-Introduce some visualization libraries.
+* Basics of `matplotlib`
+* Other frameworks (e.g., seaborn, plot.ly)
 
-* matplotlib
-* seaborn
-* plot.ly
+### Extra: Writing Tests in Python
 
+* It is important to know that your code is always doing what you expect, testing solves this problem.
+* Introduction to test-driven development.
 
-## 015- Advanced Plotting
+## 014- Machine Learning and Advanced Python
 
-## 016- Advanced Topics
-This is more of a placeholder for certain advanced topics, depending on interest. Including:
+### Principles of Machine Learning/"AI"
 
-* Typing
-* Useful modules in the standard library
-* Python by inspection
-* Context managers
-* Packaging
+* What is machine learning?
+* How does it work?
 
+### Machine Learning using `scikit-learn`
 
-## 017- Machine Learning Intro
-An introduction to machine learning using the scikit-learn library.
+* Outline the basic process of building a `scikit-learn` pipeline!
 
+### Extra: Advanced Python Topics
 
-## 018- Advanced Data Analytics
-Using Python to download and clean a dataset, explore the variables, and then create a model to predict outcomes using the variables. This will use pandas, a plotting library, and scikit-learn.
+* functions as parameters
+* context managers
+* lambdas
+* decorators
+* "magic methods"
+* typing
+
+## 015- NLP and Pygame
+
+* Why is Python so often used with NLP?
+* Building games is often a useful means of learning a new language, and pygame is no exception.
+
+### Natural Language Processing Concepts
+
+* What is NLP? How does it work?
+
+### Pygame
+
+* Getting started with building a game in Python
+* How building a game can help get a background on Python concepts
