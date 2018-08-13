@@ -1,0 +1,1 @@
+Images from highly recommended Safari book, Hands-On Machine Learning with Scikit-Learn and TensorFlow.
