@@ -251,3 +251,4 @@ Use a 'dirty' dataset, and show steps to clean and analyze the data. This will p
 
 * Getting started with building a game in Python
 * How building a game can help get a background on Python concepts
+* See pygame book: http://inventwithpython.com/pygame/
