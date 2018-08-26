@@ -21,4 +21,5 @@
 1. Cleanup collisions
 2. Variable speed based on speed of players ('spin')
 3. Setup game difficulties
+4. Object-oriented to cleanup global variables
 
