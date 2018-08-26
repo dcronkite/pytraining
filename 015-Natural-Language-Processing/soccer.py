@@ -1,5 +1,4 @@
 import sys
-from time import sleep
 
 import pygame
 
@@ -43,8 +42,9 @@ P2_X = WIDTH - P2_W - 10
 SCORE1 = 0
 SCORE2 = 0
 
-# sleep time
-GAME_SPEED = 0.01
+# game speed
+GAME_SPEED = 40
+CLOCK = pygame.time.Clock()
 
 pygame.init()
 pygame.display.set_caption('Indoor Soccer')
@@ -77,7 +77,7 @@ while True:
         (P2_X, P2_Y, P2_W, P2_H)  # location, x-width, y-length
     )
     pygame.display.update()
-    sleep(GAME_SPEED)
+    CLOCK.tick(GAME_SPEED)
 
     # # for demo only
     # if pygame.key.get_pressed()[pygame.K_DOWN]:
